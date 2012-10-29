@@ -1,0 +1,56 @@
+Adds a ”print this image” link to the image page TOC, for local image files (in compatible browsers).
+
+The extension is known to work in recent, and not so recent, versions of Chrome, Firefox, Internet Explorer and Opera. Making it work in Chrome requires an ugly hack though, and there might be cases where it doesn't work.
+
+==Release ==
+[https://github.com/rotsee/ImagePagePrintLink/tags 0.5]
+
+==Dependencies==
+MediaWiki 1.18
+
+==Installation==
+Add the following settings to your LocalSettings.php:
+require_once("$IP/extensions/ImagePagePrintLink/ImagePagePrintLink.php");
+
+
+==Changelog==
+
+*0.5
+**Now hosted on github
+**Minor code cleanup
+**Replace deprecated wfMsg
+**Added README file
+*0.4
+**Now requires MW >= 1.18
+**Replaced wgOut with getContext
+*0.3
+**Now requires MW >= 1.17
+**ja translation
+**added title-attribute
+**using Resource loader
+*0.2
+**load jquery if not loaded
+**use i18n for description
+**add extensions name to i18n message names
+*0.1
+**First version
+
+===To do===
+*Find a way to handle Google Chrome. Chrome will close the window imediately, and then try to print an empty page, if allowed into the current code.
+*Use MW's build in functions to construct the list element.
+
+==Credits ==
+The extension was originally written for http://säsongsmat.nu.
+
+Leo Wallentin
+leo_wallentin (at) hotmail.com
+@leo_wallentin
+http://xn--ssongsmat-v2a.nu
+
+
+== License ==
+BSD 
+
+== Disclaimer ==
+The source code is provided as-is, without warranty and does not warrant or endorse and does not assume and will not have any liability or responsibility for any damage or loss.
+__NOTOC__
